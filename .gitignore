@@ -1,1 +1,48 @@
-Nothing needs to be added to the .gitignore file based on the provided changes. The modification of 'llms.txt' does not require any new ignore rules, as it appears to be a source/config file that should be tracked in version control.
+```
+# Environment
+.env
+.env.local
+*.env.*
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+target/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.ENV
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+```
