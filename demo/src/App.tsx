@@ -281,6 +281,9 @@ export function App() {
 							<a className="button button-dark" href="https://www.npmjs.com/package/seedface">Install Seedface</a>
 							<a className="button button-outline" href="https://github.com/molret/seedface"><GitHubIcon /> View on GitHub</a>
 						</div>
+						<a className="product-hunt-badge" href="https://www.producthunt.com/products/seedface-a-face-for-every-seed?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-seedface-a-face-for-every-seed" target="_blank" rel="noopener noreferrer">
+							<img alt="Seedface — a face for every seed - Deterministic avatars for React, Vue, Svelte &amp; CLI | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1193347&amp;theme=light&amp;t=1783737342278" />
+						</a>
 					</div>
 				</section>
 			</main>

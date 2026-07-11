@@ -239,6 +239,9 @@ button { cursor: pointer; }
 .final-cta h2 span { color: var(--paper); }
 .final-actions { display: flex; gap: 1rem; margin-top: 12rem; }
 .final-actions .button { min-width: 12rem; }
+.product-hunt-badge { display: block; width: 250px; height: 54px; margin-top: 1.5rem; border-radius: 0.35rem; transition: transform 180ms ease; }
+.product-hunt-badge:hover { transform: translateY(-2px); }
+.product-hunt-badge img { display: block; width: 250px; height: 54px; }
 .cta-faces { position: absolute; z-index: 2; left: 50%; top: 17rem; width: min(90rem, 110vw); height: 19rem; transform: translateX(-50%); border-bottom: 1px dashed rgba(23,22,28,0.62); border-radius: 0 0 50% 50%; pointer-events: none; }
 .cta-face { position: absolute; filter: drop-shadow(0 0.7rem 0.8rem rgba(23,22,28,0.1)); }
 .cta-face svg { display: block; width: 100%; height: auto; }
@@ -367,6 +370,7 @@ button { cursor: pointer; }
 	.cta-faces { top: 15rem; }
 	.cta-face-2, .cta-face-4, .cta-face-6, .cta-face-8, .cta-face-10 { display: none; }
 	.final-actions { width: 100%; flex-direction: column; margin-top: 10rem; }
+	.product-hunt-badge { margin-top: 1.25rem; }
 	.footer-links { flex-wrap: wrap; }
 }
 
