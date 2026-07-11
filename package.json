@@ -1,6 +1,6 @@
 {
 	"name": "seedface",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Modern, framework-agnostic deterministic placeholder avatar generator. React, Vue, Svelte, Web Components, CLI. Zero-dependency core.",
 	"type": "module",
 	"main": "./dist/index.cjs",
