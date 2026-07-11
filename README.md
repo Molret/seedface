@@ -144,7 +144,7 @@ seedface generate --value "jane@doe.com" --out avatar.png --size 256   # needs @
 | `radius` | `number \| 'full' \| 'none'` | `full` | corner radius |
 | `theme` | `string` | `default` | see `listThemes()` |
 | `variant` | `light \| dark` | `light` | dark adapts the palette |
-| `background` / `color` | `string` | theme | color overrides |
+| `background` / `color` | `string` | theme | 3- or 6-digit hex color overrides, with or without `#` |
 | `displayValue` | `string` | derived | force the initials |
 | `border` / `borderSize` / `borderColor` | `boolean` / `number` / `string` | `false` / `2` / auto | |
 | `shadow` | `boolean` | `false` | soft drop shadow |
@@ -159,6 +159,28 @@ npm run build   # tsup → dist (esm + cjs + dts)
 npm test        # determinism / style / theme checks
 npm run demo    # vite playground + showcase site (controls + perf test)
 ```
+
+## AI skill
+
+Seedface includes a Skills CLI-compatible skill. Install it for your AI agent
+with:
+
+```bash
+npx skills add molret/seedface
+```
+
+The skill source is [`skills/seedface/SKILL.md`](./skills/seedface/SKILL.md).
+The longer repository-specific AI guide is available in [`docs/ai/`](./docs/ai/).
+
+For a manual local Codex install, run this from the repository root:
+
+```bash
+mkdir -p ~/.codex/skills/seedface
+cp docs/ai/SKILL.md ~/.codex/skills/seedface/SKILL.md
+cp docs/ai/seedface.md ~/.codex/skills/seedface/seedface.md
+```
+
+The second copy keeps the reference linked from `SKILL.md` available after installation.
 
 ## Credits
 

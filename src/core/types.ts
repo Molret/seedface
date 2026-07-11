@@ -15,9 +15,9 @@ export interface AvatarOptions {
 	theme?: string;
 	/** Color variant. Dark mode adapts the palette. @default 'light' */
 	variant?: AvatarVariant;
-	/** Override the background color (any CSS color). */
+	/** Override the background color (3- or 6-digit hex, with or without #). */
 	background?: string;
-	/** Override the foreground color (any CSS color). */
+	/** Override the foreground color (3- or 6-digit hex, with or without #). */
 	color?: string;
 	/** Force the displayed initials (otherwise derived from `value`). */
 	displayValue?: string;

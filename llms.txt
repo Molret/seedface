@@ -1,0 +1,28 @@
+# Seedface
+
+> Modern, framework-agnostic deterministic placeholder avatar generator for TypeScript and JavaScript.
+
+Seedface turns a string seed into stable SVG avatar markup. The same `value` produces the same avatar across machines and renders. The core is zero-dependency, synchronous, SSR/RSC-safe, and supports React, Vue, Svelte, Web Components, CLI export, and optional PNG rasterization.
+
+## Start here
+
+- [AI guide](docs/ai/seedface.md): architecture, API, integration decisions, and safe change patterns.
+- [Installable AI skill](skills/seedface/SKILL.md): Skills CLI-compatible agent instructions.
+- [README](README.md): installation and user-facing examples.
+- [Core types](src/core/types.ts): canonical `AvatarOptions` and `AvatarData` contracts.
+- [Generator](src/core/generate.ts): deterministic seed, palette, SVG, and cache behavior.
+- [React adapter](src/react.tsx), [Vue adapter](src/vue/Avatar.vue), [Svelte adapter](src/svelte/Avatar.svelte), and [Web Component adapter](src/webcomponent.ts): framework entry points.
+- [CLI](src/cli.ts): SVG/PNG command-line export.
+
+## Public entry points
+
+- `seedface`: `generateAvatar`, themes, shapes, RNG, hashes, and public types.
+- `seedface/react`: `Avatar`, `useAvatar`, and related types.
+- `seedface/vue`: Vue `Avatar` component.
+- `seedface/svelte`: Svelte `Avatar` component.
+- `seedface/webcomponent`: `SeedfaceAvatar` and `registerSeedface`.
+- `seedface/cli`: `seedface generate ...` binary.
+
+## AI guidance
+
+Color overrides currently accept only 3- or 6-digit hexadecimal values. PNG export requires optional `@resvg/resvg-js`. Preserve determinism, the zero-dependency core, SVG escaping, SSR safety, reduced-motion behavior, and backwards-compatible exports. Treat `src/core/types.ts` as the source of truth. Run `npm run typecheck`, `npm test`, and `npm run build` after changes.

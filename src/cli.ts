@@ -42,9 +42,9 @@ Options:
   --shadow        add shadow
   --animated      add CSS animation
   --salt          extra entropy
-  --png           force PNG raster (needs sharp)
+  --png           force PNG raster (needs @resvg/resvg-js)
 
-PNG output requires "sharp" (npm i -D sharp).`);
+PNG output requires "@resvg/resvg-js" (npm i -D @resvg/resvg-js).`);
 }
 
 async function main() {
