@@ -17,5 +17,6 @@
 		"verbatimModuleSyntax": false,
 		"types": ["node"]
 	},
-	"include": ["src"]
+	"include": ["src"],
+	"exclude": ["src/vue", "src/svelte", "demo", "dist", "node_modules"]
 }

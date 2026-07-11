@@ -43,6 +43,8 @@
 		"build": "tsup",
 		"dev": "tsup --watch",
 		"demo": "vite --config demo/vite.config.ts",
+		"typecheck": "tsc --noEmit",
+		"lint": "tsc --noEmit",
 		"test": "tsx test/run.ts",
 		"prepublishOnly": "npm run build && npm test"
 	},
