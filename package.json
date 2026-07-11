@@ -41,6 +41,7 @@
 	],
 	"scripts": {
 		"build": "tsup",
+		"build:demo": "vite build --config demo/vite.config.ts --base /",
 		"dev": "tsup --watch",
 		"demo": "vite --config demo/vite.config.ts",
 		"typecheck": "tsc --noEmit",
