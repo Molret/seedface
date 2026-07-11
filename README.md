@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn.molret.dev/seedface-banner.webp" alt="Seedface" width="960" style="border-radius:20px" />
+  <img src="https://cdn.molret.dev/Seedface-banner-alt.png" alt="Seedface" width="960" style="border-radius:20px" />
 </p>
 
 <p align="center">
