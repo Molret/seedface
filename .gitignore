@@ -1,6 +1,1 @@
-node_modules
-dist
-demo/dist
-demo-dist
-*.log
-.DS_Store
+Nothing needs to be added to the .gitignore file based on the provided changes. The modification of 'llms.txt' does not require any new ignore rules, as it appears to be a source/config file that should be tracked in version control.
