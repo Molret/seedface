@@ -10,7 +10,7 @@
   <a href="./LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-7c5cff" /></a>
 </p>
 
-# Seedface
+<h1 align="center">Seedface</h1>
 
 Modern, **framework-agnostic** deterministic placeholder avatar generator.
 Same string → same avatar, forever. One tiny **zero-dependency** core engine powers
