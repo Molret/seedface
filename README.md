@@ -1,5 +1,13 @@
 <p align="center">
-  <img src="https://cdn.molret.dev/seedface-banner.webp" alt="Seedface" width="720" />
+  <img src="https://cdn.molret.dev/seedface-banner.webp" alt="Seedface" width="960" style="border-radius:20px" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/molret/seedface/actions"><img alt="CI" src="https://github.com/molret/seedface/actions/workflows/ci.yml/badge.svg" /></a>
+  <a href="https://www.npmjs.com/package/seedface"><img alt="npm" src="https://img.shields.io/npm/v/seedface?color=7c5cff&label=npm" /></a>
+  <a href="https://www.npmjs.com/package/seedface"><img alt="dm" src="https://img.shields.io/npm/dm/seedface?color=7c5cff" /></a>
+  <a href="https://bundlephobia.com/package/seedface"><img alt="size" src="https://img.shields.io/bundlephobia/minzip/seedface?color=7c5cff" /></a>
+  <a href="./LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-7c5cff" /></a>
 </p>
 
 # Seedface
@@ -27,17 +35,27 @@ OG images and server-rendered lists.
 
 ## Install
 
+Pick your package manager:
+
+**NPM**
+
 ```bash
 npm i seedface
 ```
+
+**pnpm**
 
 ```bash
 pnpm add seedface
 ```
 
+**Yarn**
+
 ```bash
 yarn add seedface
 ```
+
+**Bun**
 
 ```bash
 bun add seedface
@@ -111,7 +129,7 @@ registerSeedface('my-avatar'); // custom tag name
 
 ```bash
 seedface generate --value "jane@doe.com" --style shape --theme sunset --size 128 --out avatar.svg
-seedface generate --value "jane@doe.com" --out avatar.png --size 256   # needs sharp
+seedface generate --value "jane@doe.com" --out avatar.png --size 256   # needs @resvg/resvg-js
 ```
 
 ## API
@@ -139,9 +157,11 @@ seedface generate --value "jane@doe.com" --out avatar.png --size 256   # needs s
 npm install
 npm run build   # tsup → dist (esm + cjs + dts)
 npm test        # determinism / style / theme checks
-npm run demo    # vite playground (controls + perf test)
+npm run demo    # vite playground + showcase site (controls + perf test)
 ```
 
-## License
+## Credits
 
-MIT. Original shapes © [Nusu Alabuga](https://twitter.com/nusualabuga) & [Oguz Yagiz Kara](https://twitter.com/oguzyagizkara), reused under MIT.
+MIT licensed. Original shapes © [Nusu Alabuga](https://twitter.com/nusualabuga) &
+[Oguz Yagiz Kara](https://twitter.com/oguzyagizkara), reused under MIT.
+Banner art by [Molret](https://github.com/molret).
